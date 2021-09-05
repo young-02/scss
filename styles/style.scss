@@ -1,8 +1,20 @@
-@import 'navbar';
+@import 'navbar'; 
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding:0;
     font-family: 'Kumbh Sans', sans-serif;
+}
+
+.hero{
+    background-color: $light;
+    
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
 }
