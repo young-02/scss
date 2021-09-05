@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./styles/style.css">    
+    <title>scss</title>
 </head>
 <body>
-    
-</body>
+    <!-- navbar section -->
+    <nav class="navbar">
+        <a href="/" class="navbar__logo">SASS</a>
+        <div class="navbar__bars">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="navbar__menu">
+            <a href="/" class="navbar__menu--links">Home</a>
+            <a href="/" class="navbar__menu--links">Products</a>
+            <a href="/" class="navbar__menu--links">Services</a>
+            <a href="/" class="navbar__menu--links" id="button">Sign Up</a>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <div class="hero">
+        <div class="hero__container">
+            <div class="hero__container--left">
+                <h1>They are coming</h1>
+                <h2>Be Prepared</h2>
+                <p>Sign up now to join the list.</p>
+                <button class="hero__container--btn">
+                    <a href="#">Sign Up</a>
+                </button>
+            </div>
+            <div class="hero__container--right">
+                <img src="https://raw.githubusercontent.com/briancodex/sass-website-v1/fd7a681b6a77f3642cac4b0cc11e8ed8d77f6390/images/img-2.svg" alt="alien" class="hero__container--img">
+            </div>
+        </div>
+    </div>
 </html>
