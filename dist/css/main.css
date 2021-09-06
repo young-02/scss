@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+.hero {
+  height: 100vh;
+  background: url("https://t4.ftcdn.net/jpg/03/00/94/69/240_F_300946931_kSR84OqudEhsmBZH47HU6ud7aZIDMjEx.jpg") no-repeat bottom center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10vw;
+  color: #fff;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.container p {
+  margin: 1rem 0;
+}
+/*# sourceMappingURL=main.css.map */
