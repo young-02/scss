@@ -1,21 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
-@import 'hero';
-@import 'header';
+@import './reset';
+@import './_variables';
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+@mixin flexCenter($derection){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $derection;
+}
+
+@mixin theme($light-theme:true){
+    @if $light-theme{
+        background:lighten($primary-color,100%);
+        color:darken($text-color, 100%);
+    }
+}
+
+@mixin mobile{
+    @media (max-width:$mobile){
+        @content;
+    }
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
-}
-.container{
-    width: 80%;
-    margin: 2rem auto;
+    background: $primary-color;
+    color:$text-color;
+}  
 
-    p{
-        margin:1rem 0;
+.main{
+   @include flexCenter(row);
+    width: 80% - 400px;
+    margin:0 auto;
+    
+    #{&}__paragraph1{
+        font-weight: weight(bold);
+        
+        &:hover{
+            color:pink
+        }
     }
+    #{&}__paragraph2{
+        @extend .main__paragraph1;
+
+        &:hover{
+            color:$accent-color;
+        }
+    }
+
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.light{
+    @include theme($light-theme:true);
 }
